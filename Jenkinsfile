@@ -10,12 +10,6 @@ tools{
 }
 
  stages{
-		stage('preparing the code'){
-            steps{			
-			 echo "get the code from git hub "
-			 git changelog: false, credentialsId: 'b492b511-c25d-4f1e-bf5a-1d268c4937b1', poll: false, url: 'https://github.com/Rajakumarhub/My_web_application_1.git'			 
-			}
-		}
 		stage('Doing maven build'){
 			steps{
 		        echo "performing maven build"
